@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="shortcut icon" type="image/png" href="/icon.png" />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css" integrity="sha256-kLaT2GOSpHechhsozzB+flnD+zUyjE2LlfWPgU04xyI=" crossorigin="" />
+    <script defer src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js" integrity="sha256-WBkoXOwTeyKclOHuWtc+i2uENFpDZ9YPdf5Hf+D7ewM=" crossorigin=""></script>
+    <script defer src="script.js"></script>
+    <title>visited place</title>
+  </head>
+  <body>
+    <div class="sidebar">
+      <img src="logo.png" alt="Logo" class="logo" />
+
+      <ul class="sightseeings">
+        <form class="form hidden">
+          <div class="form__row">
+            <label class="form__label">気候</label>
+            <div class="rating-container" data-category="climate" data-category="nature">
+              <div class="circle " data-value="1"></div>
+              <div class="circle" data-value="2"></div>
+              <div class="circle" data-value="3"></div>
+              <div class="circle" data-value="4"></div>
+              <div class="circle" data-value="5"></div>
+            </div>
+          </div>
+          <div class="form__row">
+            <label class="form__label">自然</label>
+            <div class="rating-container"　data-category="nature">
+              <div class="circle" data-value="1"></div>
+              <div class="circle" data-value="2"></div>
+              <div class="circle" data-value="3"></div>
+              <div class="circle" data-value="4"></div>
+              <div class="circle" data-value="5"></div>
+            </div>
+          </div>
+          <div class="form__row">
+            <label class="form__label">文化</label>
+            <div class="rating-container" data-category="culture">
+              <div class="circle" data-value="1"></div>
+              <div class="circle" data-value="2"></div>
+              <div class="circle" data-value="3"></div>
+              <div class="circle" data-value="4"></div>
+              <div class="circle" data-value="5"></div>
+            </div>
+          </div>
+          <div class="form__row">
+            <label class="form__label">食事</label>
+            <div class="rating-container" data-category="food">
+              <div class="circle" data-value="1"></div>
+              <div class="circle" data-value="2"></div>
+              <div class="circle" data-value="3"></div>
+              <div class="circle" data-value="4"></div>
+              <div class="circle" data-value="5"></div>
+            </div>
+          </div>
+          <button class="form__btn">OK</button>
+        </form>
+      </ul>
+
+      <p class="copyright">
+        &copy; Copyright by
+        Yugo Company Limited. All rights reserved.
+      </p>
+    </div>
+
+    <div id="map"></div>
+  </body>
+</html>
